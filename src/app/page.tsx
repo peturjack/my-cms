@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 
 import Hero from "./components/Hero";
-import AddProductForm from "./components/Form/page";
+import AddProductForm from "./components/Form/form";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 type SearchParamProps = {
