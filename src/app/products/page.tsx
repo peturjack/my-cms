@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 
 const getData = async () => {
-  const res = await fetch("/products", {
+  const res = await fetch("https://my-cms-alpha.vercel.app/products", {
     cache: "no-cache",
   });
   if (!res.ok) {
