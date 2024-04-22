@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 import { DeleteProduct } from "@/app/api/products/actions";
 import DeleteButton from "@/app/components/DeleteButton/page";
-import UpdateForm from "@/app/components/UpdateForm/page";
+import UpdateForm from "@/app/components/UpdateForm/updateForm";
 import Link from "next/link";
 
 export default async function Page({
