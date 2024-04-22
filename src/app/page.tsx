@@ -1,21 +1,14 @@
 import { getSession } from "@auth0/nextjs-auth0";
-import { sql } from "@vercel/postgres";
-import Link from "next/link";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 import Hero from "./components/Hero";
 import AddProductForm from "./components/Form/form";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
-
-type SearchParamProps = {
-  searchParams: Record<string, string> | null | undefined;
-};
 
 export default async function ProfileServer() {
   const items = [

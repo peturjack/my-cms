@@ -1,4 +1,3 @@
-import { sql } from "@vercel/postgres";
 import React, { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 
@@ -24,8 +23,8 @@ const Products = async () => {
       <main className="max-w-[900px] m-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 my-6 overflow-hidden">
         {data.allProducts.map((row: any) => {
           return (
-            <Link href={`/products/${row.id}`}>
-              <div className="cursor-pointer" key={row.id}>
+            <Link key={row.id} href={`/products/${row.id}`}>
+              <div className="cursor-pointer">
                 <div className="overflow-hidden">
                   <img
                     className="hover:scale-125 backdrop duration-300 cursor-pointer h-[200px] w-full object-cover brightness-[85%] hover:brightness-100 "

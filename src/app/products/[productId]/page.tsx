@@ -1,5 +1,5 @@
 import { sql } from "@vercel/postgres";
-import { DeleteProduct } from "@/app/api/products/actions";
+
 import DeleteButton from "@/app/components/DeleteButton/deleteButton";
 import UpdateForm from "@/app/components/UpdateForm/updateForm";
 import Link from "next/link";

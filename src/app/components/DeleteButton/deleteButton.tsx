@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { DeleteProduct, GetAllProducts } from "@/app/api/products/actions";
+import { DeleteProduct } from "@/app/api/products/actions";
 import { useRouter } from "next/navigation";
-import { revalidatePath } from "next/cache";
 
 export default function DeleteButton({ productId }: any) {
   const router = useRouter();
